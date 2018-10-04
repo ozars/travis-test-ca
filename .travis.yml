@@ -1,5 +1,5 @@
 sudo: required
-install:
-    - sudo apt-get update && sudo apt-get install -y libcurl3-gnutls libgnutls-dev
+before_install:
+    - git clone --branch gnutls_3_6_4 https://gitlab.com/gnutls/gnutls && cd gnutls && autoreconf -vfi && ./configure && make && sudo make install
 script:
     - git clone https://gnunet.org/git/libmicrohttpd.git/
