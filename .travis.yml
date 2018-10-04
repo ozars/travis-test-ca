@@ -1,5 +1,5 @@
 sudo: required
 install:
-    - sudo apt-get update && sudo apt-get install -y libgnutls-dev
+    - sudo apt-get update && sudo apt-get install -y git
 script:
     - git clone https://gnunet.org/git/libmicrohttpd.git/
