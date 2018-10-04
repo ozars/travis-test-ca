@@ -1,0 +1,2 @@
+script:
+    - git clone https://gnunet.org/git/libmicrohttpd.git/
