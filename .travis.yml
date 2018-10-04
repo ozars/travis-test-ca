@@ -1,5 +1,7 @@
 sudo: required
 before_install:
+    - sudo apt-get update
+    - sudo apt-get install -y gettext
     - git clone --branch gnutls_3_6_4 https://gitlab.com/gnutls/gnutls && cd gnutls && autoreconf -vfi && ./configure && make && sudo make install
 script:
     - git clone https://gnunet.org/git/libmicrohttpd.git/
