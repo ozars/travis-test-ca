@@ -1,5 +1,5 @@
 sudo: required
 install:
-    - sudo apt-get update && sudo apt-get install -y git
+    - sudo apt-get update && sudo apt-get install -y libcurl3-gnutls libgnutls-dev
 script:
     - git clone https://gnunet.org/git/libmicrohttpd.git/
