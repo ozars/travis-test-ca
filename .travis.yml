@@ -1,4 +1,2 @@
-sudo: required
-dist: xenial
 script:
-    - git clone https://gnunet.org/git/libmicrohttpd.git/
+    - git -c http.sslVerify=false clone https://gnunet.org/git/libmicrohttpd.git/
